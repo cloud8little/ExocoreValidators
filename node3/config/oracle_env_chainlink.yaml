@@ -1,0 +1,9 @@
+urls:
+  mainnet: !!str https://eth-mainnet.g.alchemy.com/v2/G-khFqBYvY9XOVa8WuMVvpnSFcGwo9nj
+  sepolia: !!str https://eth-sepolia.g.alchemy.com/v2/G-khFqBYvY9XOVa8WuMVvpnSFcGwo9nj
+tokens:
+  ETHUSDT: 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419_mainnet
+  WSTETHUSDT: 0xaaabb530434B0EeAAc9A42E25dbC6A22D7bE218E_sepolia
+  USDCUSDT: 0x8fFfFfd4AfB6115b954Bd326cbe7B4BA576818f6_mainnet
+  AAVEUSDT: 0x547a514d5e3769680Ce22B2361c10Ea13619e8a9_mainnet
+  STETHUSDT: 0xCfE54B5cD566aB89272946F602D76Ea879CAb4a8_mainnet

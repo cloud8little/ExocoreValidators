@@ -1,0 +1,434 @@
+{
+  "genesis_time": "2024-12-06T12:39:50.05650992Z",
+  "chain_id": "exocoretestnet_233-6",
+  "initial_height": "1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {
+      "app": "0"
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "07-tendermint": null,
+    "assets": {
+      "params": {
+        "exocore_lz_app_address": "0x0000000000000000000000000000000000000000",
+        "exocore_lz_app_event_topic": "0x000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "client_chains": [],
+      "tokens": [],
+      "deposits": [],
+      "operator_assets": []
+    },
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": []
+    },
+    "authz": {
+      "authorization": []
+    },
+    "avs": {
+      "params": {}
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [],
+      "supply": [],
+      "denom_metadata": [],
+      "send_enabled": []
+    },
+    "capability": {
+      "index": "1",
+      "owners": []
+    },
+    "consensus": null,
+    "crisis": {
+      "constant_fee": {
+        "denom": "stake",
+        "amount": "1000"
+      }
+    },
+    "delegation": {
+      "associations": [],
+      "delegation_states": [],
+      "stakers_by_operator": [],
+      "undelegations": []
+    },
+    "dogfood": {
+      "params": {
+        "epochs_until_unbonded": 7,
+        "epoch_identifier": "day",
+        "max_validators": 100,
+        "historical_entries": 10000,
+        "asset_ids": [
+          "0xdac17f958d2ee523a2206206994597c13d831ec7_0x65"
+        ],
+        "min_self_delegation": "0"
+      },
+      "val_set": [],
+      "opt_out_expiries": [],
+      "consensus_addrs_to_prune": [],
+      "undelegation_maturities": [],
+      "last_total_power": "0"
+    },
+    "epochs": {
+      "epochs": [
+        {
+          "identifier": "day",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "86400s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "hour",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "3600s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "minute",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "60s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        },
+        {
+          "identifier": "week",
+          "start_time": "0001-01-01T00:00:00Z",
+          "duration": "604800s",
+          "current_epoch": "0",
+          "current_epoch_start_time": "0001-01-01T00:00:00Z",
+          "epoch_counting_started": false,
+          "current_epoch_start_height": "0"
+        }
+      ]
+    },
+    "erc20": {
+      "params": {
+        "enable_erc20": true,
+        "enable_evm_hook": true
+      },
+      "token_pairs": []
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "evm": {
+      "accounts": [],
+      "params": {
+        "evm_denom": "hua",
+        "enable_create": true,
+        "enable_call": true,
+        "extra_eips": [],
+        "chain_config": {
+          "homestead_block": "0",
+          "dao_fork_block": "0",
+          "dao_fork_support": true,
+          "eip150_block": "0",
+          "eip150_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "eip155_block": "0",
+          "eip158_block": "0",
+          "byzantium_block": "0",
+          "constantinople_block": "0",
+          "petersburg_block": "0",
+          "istanbul_block": "0",
+          "muir_glacier_block": "0",
+          "berlin_block": "0",
+          "london_block": "0",
+          "arrow_glacier_block": "0",
+          "gray_glacier_block": "0",
+          "merge_netsplit_block": "0",
+          "shanghai_block": "0",
+          "cancun_block": "0"
+        },
+        "allow_unprotected_txs": false,
+        "active_precompiles": [
+          "0x0000000000000000000000000000000000000804",
+          "0x0000000000000000000000000000000000000805",
+          "0x0000000000000000000000000000000000000806",
+          "0x0000000000000000000000000000000000000807",
+          "0x0000000000000000000000000000000000000809",
+          "0x0000000000000000000000000000000000000901"
+        ],
+        "evm_channels": []
+      }
+    },
+    "exomint": {
+      "params": {
+        "mint_denom": "hua",
+        "epoch_reward": "20",
+        "epoch_identifier": "day"
+      }
+    },
+    "exoslash": {
+      "params": {}
+    },
+    "feedistribution": {
+      "params": {
+        "epoch_identifier": "minute",
+        "community_tax": "0.030000000000000000"
+      }
+    },
+    "feegrant": {
+      "allowances": []
+    },
+    "feemarket": {
+      "params": {
+        "no_base_fee": false,
+        "base_fee_change_denominator": 8,
+        "elasticity_multiplier": 2,
+        "enable_height": "0",
+        "base_fee": "1000000000",
+        "min_gas_price": "0.000000000000000000",
+        "min_gas_multiplier": "0.500000000000000000"
+      },
+      "block_gas": "0"
+    },
+    "genutil": {
+      "gen_txs": []
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": [],
+      "votes": [],
+      "proposals": [],
+      "deposit_params": null,
+      "voting_params": null,
+      "tally_params": null,
+      "params": {
+        "min_deposit": [
+          {
+            "denom": "stake",
+            "amount": "10000000"
+          }
+        ],
+        "max_deposit_period": "172800s",
+        "voting_period": "172800s",
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000",
+        "min_initial_deposit_ratio": "0.000000000000000000",
+        "burn_vote_quorum": false,
+        "burn_proposal_deposit_prevote": false,
+        "burn_vote_veto": true
+      }
+    },
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "clients_metadata": [],
+        "params": {
+          "allowed_clients": [
+            "06-solomachine",
+            "07-tendermint",
+            "09-localhost"
+          ]
+        },
+        "create_localhost": false,
+        "next_client_sequence": "0"
+      },
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": [],
+        "next_connection_sequence": "0",
+        "params": {
+          "max_expected_time_per_block": "30000000000"
+        }
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "receipts": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": [],
+        "next_channel_sequence": "0"
+      }
+    },
+    "interchainaccounts": {
+      "controller_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "ports": [],
+        "params": {
+          "controller_enabled": true
+        }
+      },
+      "host_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "port": "icahost",
+        "params": {
+          "host_enabled": true,
+          "allow_messages": [
+            "*"
+          ]
+        }
+      }
+    },
+    "operator": {
+      "operators": [],
+      "operator_records": [],
+      "opt_states": [],
+      "avs_usd_values": [],
+      "operator_usd_values": [],
+      "slash_states": [],
+      "pre_cons_keys": [],
+      "operator_key_removals": []
+    },
+    "oracle": {
+      "params": {
+        "chains": [
+          {
+            "name": "-",
+            "desc": "-"
+          },
+          {
+            "name": "Ethereum",
+            "desc": "-"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "",
+            "chain_id": "0",
+            "contract_address": "",
+            "decimal": 0,
+            "active": false,
+            "asset_id": ""
+          },
+          {
+            "name": "ETH",
+            "chain_id": "1",
+            "contract_address": "0x",
+            "decimal": 18,
+            "active": true,
+            "asset_id": "0x0b34c4d876cd569129cf56bafabb3f9e97a4ff42_0x9ce1"
+          }
+        ],
+        "sources": [
+          {
+            "name": "0 position is reserved",
+            "entry": null,
+            "valid": false,
+            "deterministic": false
+          },
+          {
+            "name": "Chainlink",
+            "entry": {
+              "offchain": {
+                "0": ""
+              },
+              "onchain": {}
+            },
+            "valid": true,
+            "deterministic": true
+          }
+        ],
+        "rules": [
+          {
+            "source_ids": [],
+            "nom": null
+          },
+          {
+            "source_ids": [
+              "0"
+            ],
+            "nom": null
+          }
+        ],
+        "token_feeders": [
+          {
+            "token_id": "0",
+            "rule_id": "0",
+            "start_round_id": "0",
+            "start_base_block": "0",
+            "interval": "0",
+            "end_block": "0"
+          },
+          {
+            "token_id": "1",
+            "rule_id": "1",
+            "start_round_id": "1",
+            "start_base_block": "1000000",
+            "interval": "10",
+            "end_block": "0"
+          }
+        ],
+        "max_nonce": 3,
+        "threshold_a": 2,
+        "threshold_b": 3,
+        "mode": 1,
+        "max_det_id": 5,
+        "max_size_prices": 100
+      },
+      "prices_list": [],
+      "validator_update_block": null,
+      "index_recent_params": null,
+      "index_recent_msg": null,
+      "recent_msg_list": [],
+      "recent_params_list": [],
+      "staker_infos_assets": [],
+      "staker_list_assets": []
+    },
+    "params": null,
+    "reward": {
+      "params": {}
+    },
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600s",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      },
+      "total_escrowed": []
+    },
+    "upgrade": {},
+    "vesting": {}
+  }
+}

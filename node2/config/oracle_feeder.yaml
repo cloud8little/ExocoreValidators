@@ -1,0 +1,16 @@
+sources:
+  - chainlink
+tokens:
+  - ETHUSDT
+  - WSTETHUSDT
+  - USDCUSDT
+sender:
+  mnemonic: ""
+  path: /root/testnetV6/node2/config
+exocore:
+  chainid: exocoretestnet_233-6
+  appName: exocore
+  rpc: 127.0.0.1:10001
+  ws:
+    addr: !!str ws://127.0.0.1:19999
+    endpoint: /websocket
