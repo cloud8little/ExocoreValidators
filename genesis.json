@@ -3476,7 +3476,7 @@
             "address": "exo1m4mewv4fr2qphdjuft8cvlz4vphur93sp0kxm0",
             "pub_key": {
               "@type": "/ethermint.crypto.v1.ethsecp256k1.PubKey",
-              "key": "A0qFJQJY1Bjxdc0v9K9yIgaUKIEznbiWK5xHG4bMpBAt"
+              "key": "ISnknQYFMj03nyLTNu7jba2TDwWxps//nVXqc+GRnko="
             },
             "sequence": "11"
           },
