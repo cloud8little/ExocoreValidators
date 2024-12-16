@@ -68,6 +68,14 @@ The Exocore Validators repository provides a setup for four default validators, 
     systemctl start testnet@4.service
     ```
 
+#### Assets Tool
+
+Before running script under assetsTool/ please make sure the sender address is the exocoreGateway Address.
+
+## check exocoreGateway
+```
+exocored q assets Params --node http://localhost:20000
+```
 
 ## License
 
