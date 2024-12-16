@@ -44,7 +44,7 @@ denom-to-suggest = "uatom"
 
 [grpc]
 enable = false
-address = "127.0.0.3:10002"
+address = "127.0.0.1:10002"
 max-recv-msg-size = "10485760"
 max-send-msg-size = "2147483647"
 

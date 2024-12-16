@@ -4,6 +4,10 @@
 
 The Exocore Validators repository provides a setup for four default validators, configured with default deposit and delegation settings.
 
+### Exocore Binary
+
+https://github.com/ExocoreNetwork/exocore/releases/tag/v1.0.9
+
 ## Quick Start
 
 ### Steps
@@ -72,10 +76,24 @@ The Exocore Validators repository provides a setup for four default validators, 
 
 Before running script under assetsTool/ please make sure the sender address is the exocoreGateway Address.
 
-## check exocoreGateway
+#### 1. check exocoreGateway
 ```
 exocored q assets Params --node http://localhost:20000
 ```
+#### 2. transfer asset to test1 account
+```
+exocored tx bank send v2 exo18r2a9w0zqr909vv06av2z8e5a25v2xwq8tzxhv 100000000000000000000hua --from v2 --home node1/ --keyring-backend test --gas-prices 7hua --node http://localhost:20000
+```
+#### 3. update params
+```
+exocored tx assets UpdateParams 0x38D5d2B9E200Caf2b18fd758A11F34EAA8c519c0 0x000000000000000000000000000000000000000000000000000000000000000 --from test1 --keyring-backend test --gas-prices 7hua --node http://localhost:20000 --home node1/
+```
+#### 4. run deposit.sh delegate.sh selfdelegate.sh
+#### 5. check staker amount
+```
+exocored q assets QueStakerAssetInfos 0xa53f68563D22EB0dAFAA871b6C08a6852f91d627_0x9ce1 --node http://localhost:20000
+```
+
 
 ## License
 
