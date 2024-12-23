@@ -23,6 +23,10 @@ https://github.com/ExocoreNetwork/exocore/releases/tag/v1.0.9
     ```sh
     cd testnetV6
     cp -r <DIR>/ExocoreValidators/node* ./
+    # copy genesis file to each node folder
+    ./copy.sh
+    # clean data folder for each node folder
+    ./clean.sh
     ```
 
 3. Create a system service at `/etc/systemd/system/testnet@.service`:
@@ -79,17 +83,13 @@ Before running script under assetsTool/ please make sure the sender address is t
 #### 1. check exocoreGateway
 ```
 exocored q assets Params --node http://localhost:20000
+params:
+  exocore_lz_app_address: 0x6d73be844ea6cec86bfc0ff2b4bfa32ac5c4a7c2
+  exocore_lz_app_event_topic: "0x000000000000000000000000000000000000000000000000000000000000000"
 ```
-#### 2. transfer asset to test1 account
-```
-exocored tx bank send v2 exo18r2a9w0zqr909vv06av2z8e5a25v2xwq8tzxhv 100000000000000000000hua --from v2 --home node1/ --keyring-backend test --gas-prices 7hua --node http://localhost:20000
-```
-#### 3. update params
-```
-exocored tx assets UpdateParams 0x38D5d2B9E200Caf2b18fd758A11F34EAA8c519c0 0x000000000000000000000000000000000000000000000000000000000000000 --from test1 --keyring-backend test --gas-prices 7hua --node http://localhost:20000 --home node1/
-```
-#### 4. run deposit.sh delegate.sh selfdelegate.sh
-#### 5. check staker amount
+
+#### 2. run deposit.sh delegate.sh selfdelegate.sh
+#### 3. check staker amount
 ```
 exocored q assets QueStakerAssetInfos 0xa53f68563D22EB0dAFAA871b6C08a6852f91d627_0x9ce1 --node http://localhost:20000
 ```
