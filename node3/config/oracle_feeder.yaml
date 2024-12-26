@@ -3,7 +3,7 @@ sources:
 tokens:
   - ETHUSDT
   - WSTETHUSDT
-  - USDCUSDT
+  - NSTETH
 sender:
   mnemonic: ""
   path: /root/testnetV6/node3/config
