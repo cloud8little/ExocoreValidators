@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2024-12-23T02:27:24Z",
+  "genesis_time": "2025-01-03T09:11:47Z",
   "chain_id": "exocoretestnet_233-6",
   "initial_height": "1",
   "consensus_params": {
@@ -3592,6 +3592,16 @@
             "sequence": "0"
           },
           "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "exo1fnzretkr4mvlyjtx4waf0aqm9y3s344es2ecuh",
+            "pub_key": null,
+            "account_number": "320",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
         }
       ]
     },
@@ -3880,6 +3890,15 @@
             {
               "denom": "hua",
               "amount": "19999827292814738040"
+            }
+          ]
+        },
+        {
+          "address": "exo1fnzretkr4mvlyjtx4waf0aqm9y3s344es2ecuh",
+          "coins": [
+            {
+              "denom": "hua",
+              "amount": "1000000000000000000000"
             }
           ]
         },
@@ -4418,7 +4437,7 @@
       "supply": [
         {
           "denom": "hua",
-          "amount": "66360000000000000000000"
+          "amount": "67360000000000000000000"
         }
       ],
       "denom_metadata": [],
@@ -4598,7 +4617,8 @@
           "0x83e6850591425e3c1e263c054f4466838b9bd9e4_0x9ce1",
           "0xb82381a3fbd3fafa77b3a7be693342618240067b_0x9ce1",
           "0x0000000000000000000000000000000000000000_0x0",
-          "0x1e867667ef16111047c2c7f6adf4612bdf80064d_0x9d19"
+          "0x1e867667ef16111047c2c7f6adf4612bdf80064d_0x9d19",
+          "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee_0x9d19"
         ],
         "epoch_identifier": "minute",
         "epochs_until_unbonded": 2,
@@ -12797,8 +12817,7 @@
         "params": {
           "allowed_clients": [
             "06-solomachine",
-            "07-tendermint",
-            "09-localhost"
+            "07-tendermint"
           ]
         },
         "create_localhost": false,
@@ -13384,7 +13403,7 @@
       "params": {
         "signed_blocks_window": "100",
         "min_signed_per_window": "0.500000000000000000",
-        "downtime_jail_duration": "600s",
+        "downtime_jail_duration": "180s",
         "slash_fraction_double_sign": "0.050000000000000000",
         "slash_fraction_downtime": "0.010000000000000000"
       },
