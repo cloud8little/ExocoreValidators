@@ -1,16 +1,18 @@
-sources:
-  - chainlink
 tokens:
-  - ETHUSDT
-  - WSTETHUSDT
-  - NSTETH
+  - token: ETHUSDT
+    sources: chainlink
+  - token: WSTETHUSDT
+    sources: chainlink  
+  - token: NSTETH
+    sources: beaconchain
 sender:
   mnemonic: ""
   path: /root/testnetV6/node4/config
-exocore:
-  chainid: exocoretestnet_233-6
-  appName: exocore
-  rpc: 127.0.0.1:10003
-  ws:
-    addr: !!str ws://127.0.0.1:19997
-    endpoint: /websocket
+imua:
+  chainid: imuachaintestnet_233-8
+  appName: imua
+  grpc: 127.0.0.1:10003
+  ws: !!str ws://127.0.0.1:19997/websocket
+  rpc: !!str http://127.0.0.1:19997
+debugger:
+  grpc: !!str :50054
