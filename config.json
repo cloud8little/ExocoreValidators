@@ -1,5 +1,5 @@
 {
-    "sourceFolder":"/home/cloud8little/localnetV8",
+    "sourceFolder":"/root/localnetV8",
     "service": "devnet@.service",
     "p2pPorts": [
         "30000",
@@ -14,6 +14,13 @@
         "8565",
         "8575",
         "8585"
+    ],
+    "wsPorts": [
+        "8546",
+        "8556",
+        "8566",
+        "8576",
+        "8586"
     ],
     "rpcPorts": [
         "20000",
@@ -38,16 +45,16 @@
     ],
     "ips": [
         "127.0.0.1",
-        "127.0.0.2",
-        "127.0.0.3", 
-        "127.0.0.4",
+        "127.0.0.1",
+        "127.0.0.1", 
+        "127.0.0.1",
         "127.0.0.1"
     ],
     "envOpts": [
-        "--json-rpc.api eth,txpool,personal,net,debug,web3 --grpc.enable true --json-rpc.enable true --oracle",
-        "--grpc.enable true --oracle",
-        "--grpc.enable true --oracle",
-        "--grpc.enable true --oracle",
-        "--grpc.enable true --oracle"
+        "--json-rpc.api eth,txpool,personal,net,debug,web3 --grpc.enable true --json-rpc.enable true --api.enable --oracle",
+        "--grpc.enable true --json-rpc.enable --oracle",
+        "--grpc.enable true --json-rpc.enable --oracle",
+        "--grpc.enable true --json-rpc.enable --oracle",
+        "--grpc.enable true --json-rpc.enable --oracle"
     ]
 }

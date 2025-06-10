@@ -139,6 +139,7 @@ def main():
     DEBUGGER_PORTS = config.get("debuggerPorts", [])
     JSONPRC_PORTS = config.get("jsonrpcPorts", [])
     ENV_OPTS = config.get("envOpts", "")
+    WS_PORTS = config.get("wsPorts", [])
     # modify p2p ports in validators config.toml
     PERSISTENT_PEERS = []
     for i in range( 0, 0 + N ):
@@ -194,6 +195,7 @@ def main():
             IPS[ i ], GRPC_PORTS[ i ],
         )
         data['json-rpc' ][ "address" ] = "0.0.0.0:{}".format( JSONPRC_PORTS [ i ] )
+        data['json-rpc' ][ "ws-address"] = "0.0.0.0:{}".format( WS_PORTS [ i ] )
         with open( app_file_path, "w" ) as file:
             toml.dump( data, file ) 
     #=================================================================================================
@@ -231,8 +233,8 @@ def main():
     #=================================================================================================
     # set start.env file
     # =================================================================================================
-    # service_path = config.get("service", "")
-    # write_service_file(service_path, sourceFolder)
+    service_path = config.get("service", "")
+    write_service_file(service_path, sourceFolder)
 
 
 if __name__ == "__main__":
